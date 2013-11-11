@@ -13,6 +13,9 @@ namespace RunCommandAs
         [Option('p', "pass", Required = true, HelpText = "Password for the selected user.")]
         public string Password { get; set; }
 
+        [Option('w', "workDir", Required = false, HelpText = "Working directory.")]
+        public string WorkingDirectory { get; set; }
+
         [Option('c', "command", Required = true, HelpText = "Command to run (use parathesis).")]
         public string Command { get; set; }
     }

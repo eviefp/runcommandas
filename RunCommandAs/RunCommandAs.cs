@@ -19,6 +19,7 @@ namespace RunCommandAs
                 UserName = options.Username,
                 Domain = options.Domain,
                 Password = secureString,
+                WorkingDirectory = options.WorkingDirectory
             };
         }
 
